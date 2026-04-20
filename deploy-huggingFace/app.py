@@ -33,6 +33,8 @@ vocab_size = len(vocab)
 
 
 SEQ_LEN = 32
+
+# Mini transformer pre-trained (MiniGPT)
 class MiniGPT(nn.Module):
 
     def __init__(self,vocab_size,emb,heads,layers,max_len,ffn):

@@ -30,6 +30,7 @@ num_heads = 4
 num_layers = 3
 ffn_dim = 128
 
+# Mini transformer pre-trained (MiniGPT)
 class MiniGPT(nn.Module):
     def __init__(self, vocab_size, embedding_dim, num_heads,
                  num_layers, max_seq_len, ffn_dim):
