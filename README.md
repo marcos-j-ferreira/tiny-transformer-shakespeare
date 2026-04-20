@@ -51,3 +51,22 @@ This project uses a simplified Transformer encoder for next-word prediction.
 ## Test the Model
 
 Try the model online at [Hugging Face Spaces](https://huggingface.co/spaces/marcos-j-ferreira/tiny-transformer-shakespeare).
+
+## Evaluation
+
+The model was evaluated on a held-out validation set (10% of the data).
+
+- **Perplexity**: 36.74
+- **Average Loss**: 3.6039
+
+### Generated Samples
+
+- Prompt: 'To be or' -> 'To be or besides i command cominius i charge among the guests think'
+- Prompt: 'All the world's' -> 'All the world's of death which robs the breath of all shall pen'
+- Prompt: 'Romeo and' -> 'Romeo and in the view of the house of this while i'
+
+### Prediction Probabilities
+
+Top 10 predicted words for the prompt "To be":
+
+![Top 10 Predicted Words](evaluation_plot.png)
